@@ -1,0 +1,39 @@
+.top-brands {
+  padding-top: 30px;
+}
+
+.top-brands-cover {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: var(--primary-bg);
+  box-shadow: var(--collection-shadow);
+  border: 0.5px solid var(--border-white);
+}
+
+.top-brands-image {
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* General card hover effect for popping up */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Specific image hover effect inside the card */
+.card img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05); /* Scale the image slightly */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow effect to the image */
+}
