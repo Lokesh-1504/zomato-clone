@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const ExploreCard = ({ unique_id, restaurant, restaurants }) => {
   const name = restaurant["Restaurant Name"];
   let coverImg = restaurant["featured_image"];
-
   // If the current restaurant doesn't have an image, pick a random restaurant with a featured image
   if (!coverImg) {
     const availableImages = restaurants
